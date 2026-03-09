@@ -1,0 +1,53 @@
+index.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Empress — Grimoire of the Digital Worlds</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; background: #0a0a0a; color: #d4af37; line-height: 1.8; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 60px 40px; }
+    h1 { font-size: 3em; text-align: center; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3); }
+    .subtitle { text-align: center; font-style: italic; font-size: 1.2em; margin-bottom: 60px; color: #a89855; }
+    .loading { text-align: center; padding: 100px 20px; }
+    .spinner { border: 3px solid #333; border-top: 3px solid #d4af37; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .message { text-align: center; font-size: 1.1em; color: #c9a961; }
+    .instructions { background: #1a1a1a; border: 1px solid #d4af37; padding: 30px; margin-top: 40px; border-radius: 5px; }
+    .instructions h2 { color: #d4af37; margin-bottom: 15px; }
+    .instructions ol { margin-left: 20px; }
+    .instructions li { margin-bottom: 10px; }
+    code { background: #000; padding: 2px 6px; border-radius: 3px; color: #d4af37; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✦ The Little Empress ✦</h1>
+    <p class="subtitle">Grimoire of the Digital Worlds</p>
+    
+    <div class="loading">
+      <div class="spinner"></div>
+      <p class="message">Preparing the grimoire...</p>
+      <p style="margin-top: 30px; color: #8a7548;">This page is loading the interactive grimoire.<br />If loading takes more than 10 seconds, please refresh the page.</p>
+    </div>
+    
+    <div class="instructions">
+      <h2>⚠ Setup Instructions</h2>
+      <p>The full interactive grimoire file needs to be uploaded to this repository. To get started:</p>
+      <ol>
+        <li>Download your <code>little-empress-grimoire-v3-progress.html</code> file</li>
+        <li>Visit the <a href="https://github.com/NounStream/little-empress-grimoire" style="color: #d4af37;">GitHub repository</a></li>
+        <li>Upload the HTML file and rename it to <code>index.html</code></li>
+        <li>In the repository Settings → Pages, enable GitHub Pages</li>
+        <li>Access the grimoire at: <code>https://NounStream.github.io/little-empress-grimoire/</code></li>
+      </ol>
+    </div>
+  </div>
+  
+  <script>
+    // Redirect logic (optional)
+    // window.location.href = 'https://github.com/NounStream/little-empress-grimoire';
+  </script>
+</body>
+</html>
